@@ -1,0 +1,34 @@
+package fr.amu.qualite.model.places;
+
+/**
+ * Abstract base class for all places in the game.
+ */
+public abstract class Place {
+
+    private String name;
+    private int capacity;
+
+    public Place() {
+    }
+
+    public Place(String name, int capacity) {
+        this.name = name;
+        this.capacity = capacity;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+}

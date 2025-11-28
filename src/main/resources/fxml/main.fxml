@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/21"
+            fx:controller="fr.amu.qualite.view.javafx.MainController"
+            prefHeight="600.0" prefWidth="800.0">
+
+    <top>
+        <MenuBar>
+            <menus>
+                <Menu text="File">
+                    <items>
+                        <MenuItem text="New Game" onAction="#handleNewGame"/>
+                        <MenuItem text="Load Game" onAction="#handleLoadGame"/>
+                        <MenuItem text="Save Game" onAction="#handleSaveGame"/>
+                        <SeparatorMenuItem/>
+                        <MenuItem text="Exit" onAction="#handleExit"/>
+                    </items>
+                </Menu>
+                <Menu text="Help">
+                    <items>
+                        <MenuItem text="About" onAction="#handleAbout"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="20.0">
+            <Label text="Welcome to ArmoricAnsim" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+            <Label text="A simulation game featuring Gauls, Romans, and Werewolves"/>
+            <Button text="Start Game" onAction="#handleStartGame"/>
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER" spacing="10.0" style="-fx-padding: 10;">
+            <Label fx:id="statusLabel" text="Ready"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>
