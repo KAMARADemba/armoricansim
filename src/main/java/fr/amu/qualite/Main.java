@@ -1,5 +1,7 @@
 package fr.amu.qualite;
 
+import fr.amu.qualite.view.javafx.MainApp;
+
 /**
  * Main entry point for the ArmoricAnsim application.
  */
@@ -11,6 +13,6 @@ public class Main {
      * @param args command line arguments
      */
     public static void main(String[] args) {
-        // Application entry point
+        MainApp.main(args);
     }
 }
